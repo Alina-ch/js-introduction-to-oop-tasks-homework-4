@@ -1,3 +1,7 @@
 // BEGIN
+function each(objects, callback) {
+    objects.map(obj => callback.call(obj));
+    };
 
-// END
+export default each;
+//END

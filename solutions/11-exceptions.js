@@ -6,5 +6,14 @@ export class ParseError extends Error {
 }
 
 // BEGIN
+const parseJson = (text) => {
+  try {
+    return JSON.parse(text);
+  }
+  catch(e) {
+    throw new ParseError(e);
+  }
+};
 
+export {parseJson};
 // END
