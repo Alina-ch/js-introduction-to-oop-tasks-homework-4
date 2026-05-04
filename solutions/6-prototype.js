@@ -43,3 +43,4 @@ Money.prototype.format = function format() {
 }
 
 export default Money;
+// END
